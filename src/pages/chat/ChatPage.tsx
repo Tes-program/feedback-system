@@ -257,7 +257,7 @@ const ChatPage = () => {
           </button>
           <div className="flex items-center">
             <div className="relative">
-              <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center text-primary-600 dark:text-primary-300 font-medium text-lg">
+              <div className="w-10 h-10 rounded-full bg-gray-500 dark:bg-primary-100 flex items-center justify-center text-primary-600 dark:text-primary-300 font-medium text-lg">
                 {chatPartner.avatar}
               </div>
               {chatPartner.isOnline && (
@@ -382,8 +382,8 @@ const ChatPage = () => {
                   <div 
                     className={`max-w-xs md:max-w-md lg:max-w-lg rounded-lg px-4 py-2 shadow-sm ${
                       message.senderRole === userRole 
-                        ? 'bg-primary-600 text-white' 
-                        : 'bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200'
+                        ? 'bg-primary-600 text-black dark:text-white' 
+                        : 'bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-500'
                     }`}
                   >
                     <p className="text-sm whitespace-pre-wrap">{message.content}</p>
@@ -501,7 +501,7 @@ const ChatPage = () => {
           <button
             type="submit"
             disabled={sending || (!newMessage.trim() && attachments.length === 0)}
-            className="ml-3 inline-flex items-center px-4 py-3 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 disabled:bg-primary-300 disabled:cursor-not-allowed h-[46px]"
+            className="ml-3 inline-flex items-center px-4 py-3 border border-transparent text-sm font-medium rounded-lg shadow-sm text-black dark:text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 disabled:bg-primary-300 disabled:cursor-not-allowed h-[46px]"
           >
             {sending ? (
               <ArrowPathIcon className="h-5 w-5 animate-spin" />

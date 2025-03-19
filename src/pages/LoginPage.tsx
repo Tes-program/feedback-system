@@ -41,7 +41,7 @@ const LoginPage = () => {
         {/* Left side - Brand information */}
         <div className="w-full lg:w-1/2 lg:pr-16 mb-10 lg:mb-0">
           <Link to="/" className="flex items-center mb-8">
-            <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold text-3xl ml-3">C2M</div>
+            <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-black dark:text-white font-bold text-3xl ml-3">C2M</div>
             {/* <span className="ml-3 text-2xl font-bold text-gray-800 dark:text-white"></span> */}
           </Link>
           
@@ -157,11 +157,11 @@ const LoginPage = () => {
                 </label>
               </div>
               
-              <div>
+              <div className='text-black dark:text-white'>
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex justify-center items-center px-4 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
+                  className="w-full flex justify-center items-center px-4 py-3 bg-primary-600 hover:bg-primary-700 text-black dark:text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
                 >
                   {loading ? (
                     <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

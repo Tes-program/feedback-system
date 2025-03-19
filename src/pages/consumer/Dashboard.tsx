@@ -102,7 +102,7 @@ const ConsumerDashboard = () => {
             <div className="mt-6">
               <Link 
                 to="/consumer/feedback" 
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm dark:text-white text-black bg-primary-600 hover:bg-primary-700"
               >
                 Submit New Feedback
                 <ArrowRightIcon className="ml-2 h-4 w-4" />

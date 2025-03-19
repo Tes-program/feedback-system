@@ -148,7 +148,7 @@ const ManufacturerDashboard = () => {
               <button 
                 onClick={handleExportFeedback}
                 disabled={exportLoading || feedbackItems.length === 0}
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 disabled:cursor-not-allowed"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-black dark:text-white bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 disabled:cursor-not-allowed"
               >
                 {exportLoading ? (
                   <>
@@ -337,7 +337,7 @@ const ManufacturerDashboard = () => {
                   <div>
                     <Link 
                       to={`/manufacturer/chat/${item.id}`}
-                      className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 shadow-sm"
+                      className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md text-black dark:text-white bg-primary-600 hover:bg-primary-700 shadow-sm"
                     >
                       Respond
                     </Link>
