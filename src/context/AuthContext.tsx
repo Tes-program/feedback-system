@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   createContext,
   useContext,
   useEffect,
   useState,
   ReactNode,
-  Provider,
 } from "react";
 import {
   User,
