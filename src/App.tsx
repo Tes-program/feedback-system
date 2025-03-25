@@ -16,6 +16,8 @@ const ChatPage = lazy(() => import('./pages/chat/ChatPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const ProfilePage = lazy(() => import('./pages/ProfilePage'));
 const AnalyticsPage = lazy(() => import('./pages/manufacturer/AnalyticsPage'));
+const ReportsManagement = lazy(() => import('./pages/ReportManagement'));
+
 
 // Loading component
 const LoadingFallback = () => (
@@ -75,6 +77,7 @@ function App() {
                       <Route path="chat/:feedbackId" element={<ChatPage />} />
                       <Route path="*" element={<Navigate to="/consumer/dashboard" replace />} />
                       <Route path="profile" element={<ProfilePage />} />
+                      <Route path="reports" element={<ReportsManagement />} />
                     </Routes>
                   </MainLayout>
                 </ProtectedRoute>
@@ -90,6 +93,7 @@ function App() {
                       <Route path="profile" element={<ProfilePage />} />
                       <Route path="analytics" element={<AnalyticsPage />} />
                       <Route path="*" element={<Navigate to="/manufacturer/dashboard" replace />} />
+                      <Route path="reports" element={<ReportsManagement />} />
                     </Routes>
                   </MainLayout>
                 </ProtectedRoute>
